@@ -1,1 +1,45 @@
-allo
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Spin!</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <!-- <link rel="icon" href="/favicon.ico"> -->
+  <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/main.css?v=1.0">
+
+</head>
+
+<body>
+  <div id="config">
+    <div class="option" id="contestants">
+        <textarea id="names"></textarea>
+    </div>
+    <div class="option" id="colors">
+        <div class="color" id="color-1">box1</div>
+        <div class="color" id="color-2">box2</div>
+        <div class="color" id="color-3">box3</div>
+        <div class="color" id="color-4">box4</div>
+    </div>
+  </div>
+  <div id="wheel-wrap">
+    <canvas id="wheel-canvas" width="1000" height="1000"></canvas>
+    <input type="button" value="spin" onclick="spin();" style="float:left;" />
+  </div>
+  <div id="footer"></div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
